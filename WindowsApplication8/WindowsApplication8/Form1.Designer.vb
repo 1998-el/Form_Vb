@@ -45,6 +45,7 @@ Partial Class Form1
         Me.RadioButton1 = New System.Windows.Forms.RadioButton()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
+        Me.Button3 = New System.Windows.Forms.Button()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
@@ -292,12 +293,26 @@ Partial Class Form1
         Me.Button2.Text = "Clear All"
         Me.Button2.UseVisualStyleBackColor = True
         '
+        'Button3
+        '
+        Me.Button3.BackColor = System.Drawing.SystemColors.HotTrack
+        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Button3.ForeColor = System.Drawing.Color.White
+        Me.Button3.Location = New System.Drawing.Point(522, 638)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(138, 47)
+        Me.Button3.TabIndex = 3
+        Me.Button3.Text = "afficher"
+        Me.Button3.UseVisualStyleBackColor = False
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.ClientSize = New System.Drawing.Size(1281, 714)
+        Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.GroupBox1)
@@ -334,5 +349,6 @@ Partial Class Form1
     Friend WithEvents Label7 As System.Windows.Forms.Label
     Friend WithEvents Label8 As System.Windows.Forms.Label
     Friend WithEvents Label10 As System.Windows.Forms.Label
+    Friend WithEvents Button3 As System.Windows.Forms.Button
 
 End Class
