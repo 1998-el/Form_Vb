@@ -30,7 +30,64 @@ Public Class Form1
         formContent.SexeFemme = RadioButton2.Checked
         formContent.Specialite = ComboBox1.SelectedIndex
 
-        ' Ajoutez l'instance du formulaire au tableau
+        ' expressions reguliere pour validate l'email
+        Dim pattern As String = "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+
+        'full name
+        If String.IsNullOrEmpty(formContent.Nom) Or String.IsNullOrEmpty(formContent.Prenom) Then
+            Label6.Text = "Veillez renseigner votre nom et prenom !"
+            Label6.ForeColor = Color.OrangeRed
+        ElseIf IsNumeric(formContent.Nom) Or IsNumeric(formContent.Prenom) Then
+            Label6.Text = "seule des lettres sont autorise"
+            Label6.ForeColor = Color.OrangeRed
+        Else
+            Label6.Text = "Good!!"
+            Label6.ForeColor = Color.Green
+        End If
+
+        'input field email
+        If String.IsNullOrEmpty(formContent.Email) Then
+            Label7.Text = "Veillez renseigner votre email!"
+            Label7.ForeColor = Color.OrangeRed
+        ElseIf Regex.IsMatch(formContent.Email, pattern) Then
+            Label7.Text = "Good!!"
+            Label7.ForeColor = Color.Green
+        Else
+            Label7.Text = "Rassurez-vous que l'email respecte ce format 'exemple9@XXX.com'"
+            Label7.ForeColor = Color.OrangeRed
+        End If
+
+        'input fiel speciality
+        If ComboBox1.SelectedIndex <> -1 Then
+            Label9.Text = "Good!!"
+            Label9.ForeColor = Color.Green
+        Else
+            Label9.Text = "Veillez selectionner votre specialite!"
+            Label9.ForeColor = Color.OrangeRed
+        End If
+
+        'Genre
+        If RadioButton1.Checked Or RadioButton2.Checked Then
+            Label8.Text = "Good!!"
+            Label8.ForeColor = Color.Green
+        Else
+            Label8.Text = "Veillez cocher votre Genre!"
+            Label8.ForeColor = Color.OrangeRed
+        End If
+
+        'address
+        If String.IsNullOrEmpty(formContent.Adresse) Then
+            Label10.Text = "Veillez remplir une adresse!"
+            Label10.ForeColor = Color.OrangeRed
+        ElseIf IsNumeric(formContent.Adresse) Then
+            Label10.Text = "seul les lettres sont autorise!"
+            Label10.ForeColor = Color.OrangeRed
+        Else
+            Label10.Text = "Good!!"
+            Label10.ForeColor = Color.Green
+        End If
+
+    ' Ajoutez l'instance du formulaire au tableau
         If formulaires Is Nothing Then
             ReDim formulaires(0)
         Else
@@ -38,9 +95,8 @@ Public Class Form1
         End If
         formulaires(formulaires.Length - 1) = formContent
 
-        ' Ouvrez le Form2 et passez les données
-        Dim form2 As New Form2(formulaires)
-        form2.Show()
+    ' Ouvrez le Form2 et passez les données
+    
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
@@ -59,7 +115,11 @@ Public Class Form1
     End Sub
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        ' Configurez le DataGridView pour afficher les données
-        DataGridView1.AutoGenerateColumns = True ' Génère automatiquement les colonnes à partir des propriétés de la classe FormRegister
+
+    End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        Dim form2 As New Form2(formulaires)
+        form2.Show()
     End Sub
 End Class
