@@ -95,7 +95,8 @@ Public Class Form1
         End If
         formulaires(formulaires.Length - 1) = formContent
 
-    ' Ouvrez le Form2 et passez les données
+        ' Ouvrez le Form2 et passez les données
+
     
     End Sub
 
@@ -120,6 +121,7 @@ Public Class Form1
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
         Dim form2 As New Form2(formulaires)
+        form2.DataGridView1.DataSource = formulaires
         form2.Show()
     End Sub
 End Class

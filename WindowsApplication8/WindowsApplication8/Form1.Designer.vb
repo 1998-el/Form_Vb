@@ -59,7 +59,7 @@ Partial Class Form1
         Me.GroupBox2.Controls.Add(Me.Label1)
         Me.GroupBox2.Controls.Add(Me.TextBox1)
         Me.GroupBox2.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.GroupBox2.Location = New System.Drawing.Point(50, 54)
+        Me.GroupBox2.Location = New System.Drawing.Point(75, 51)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(642, 154)
         Me.GroupBox2.TabIndex = 0
@@ -128,10 +128,10 @@ Partial Class Form1
         Me.GroupBox1.Controls.Add(Me.GroupBox2)
         Me.GroupBox1.Controls.Add(Me.GroupBox3)
         Me.GroupBox1.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.GroupBox1.Location = New System.Drawing.Point(262, 16)
+        Me.GroupBox1.Location = New System.Drawing.Point(228, 16)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Padding = New System.Windows.Forms.Padding(10)
-        Me.GroupBox1.Size = New System.Drawing.Size(748, 592)
+        Me.GroupBox1.Size = New System.Drawing.Size(782, 592)
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "FORMULAIRE D'ENREGISTREMENT"
@@ -140,7 +140,7 @@ Partial Class Form1
         '
         Me.Label10.AutoSize = True
         Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label10.Location = New System.Drawing.Point(347, 547)
+        Me.Label10.Location = New System.Drawing.Point(372, 544)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(0, 25)
         Me.Label10.TabIndex = 10
@@ -150,7 +150,7 @@ Partial Class Form1
         Me.Label9.AutoSize = True
         Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!)
         Me.Label9.ForeColor = System.Drawing.Color.OrangeRed
-        Me.Label9.Location = New System.Drawing.Point(27, 547)
+        Me.Label9.Location = New System.Drawing.Point(71, 544)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(0, 22)
         Me.Label9.TabIndex = 9
@@ -160,7 +160,7 @@ Partial Class Form1
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!)
         Me.Label7.ForeColor = System.Drawing.Color.OrangeRed
-        Me.Label7.Location = New System.Drawing.Point(46, 288)
+        Me.Label7.Location = New System.Drawing.Point(71, 285)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(0, 22)
         Me.Label7.TabIndex = 6
@@ -168,7 +168,7 @@ Partial Class Form1
         'TextBox4
         '
         Me.TextBox4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!)
-        Me.TextBox4.Location = New System.Drawing.Point(395, 493)
+        Me.TextBox4.Location = New System.Drawing.Point(420, 490)
         Me.TextBox4.Name = "TextBox4"
         Me.TextBox4.Size = New System.Drawing.Size(297, 28)
         Me.TextBox4.TabIndex = 8
@@ -177,7 +177,7 @@ Partial Class Form1
         '
         Me.Label5.AutoSize = True
         Me.Label5.ForeColor = System.Drawing.SystemColors.InfoText
-        Me.Label5.Location = New System.Drawing.Point(391, 454)
+        Me.Label5.Location = New System.Drawing.Point(416, 451)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(68, 20)
         Me.Label5.TabIndex = 7
@@ -188,7 +188,7 @@ Partial Class Form1
         Me.ComboBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
         Me.ComboBox1.FormattingEnabled = True
         Me.ComboBox1.Items.AddRange(New Object() {"Informatique", "Gestion", "Medecine"})
-        Me.ComboBox1.Location = New System.Drawing.Point(50, 488)
+        Me.ComboBox1.Location = New System.Drawing.Point(75, 485)
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(162, 33)
         Me.ComboBox1.TabIndex = 6
@@ -197,7 +197,7 @@ Partial Class Form1
         '
         Me.Label4.AutoSize = True
         Me.Label4.ForeColor = System.Drawing.SystemColors.InfoText
-        Me.Label4.Location = New System.Drawing.Point(46, 454)
+        Me.Label4.Location = New System.Drawing.Point(71, 451)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(82, 20)
         Me.Label4.TabIndex = 5
@@ -207,7 +207,7 @@ Partial Class Form1
         '
         Me.Label3.AutoSize = True
         Me.Label3.ForeColor = System.Drawing.SystemColors.InfoText
-        Me.Label3.Location = New System.Drawing.Point(46, 211)
+        Me.Label3.Location = New System.Drawing.Point(71, 208)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(48, 20)
         Me.Label3.TabIndex = 5
@@ -216,7 +216,7 @@ Partial Class Form1
         'TextBox3
         '
         Me.TextBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!)
-        Me.TextBox3.Location = New System.Drawing.Point(50, 243)
+        Me.TextBox3.Location = New System.Drawing.Point(75, 240)
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Size = New System.Drawing.Size(642, 37)
         Me.TextBox3.TabIndex = 5
@@ -227,7 +227,7 @@ Partial Class Form1
         Me.GroupBox3.Controls.Add(Me.RadioButton2)
         Me.GroupBox3.Controls.Add(Me.RadioButton1)
         Me.GroupBox3.ForeColor = System.Drawing.SystemColors.InfoText
-        Me.GroupBox3.Location = New System.Drawing.Point(50, 320)
+        Me.GroupBox3.Location = New System.Drawing.Point(75, 317)
         Me.GroupBox3.Name = "GroupBox3"
         Me.GroupBox3.Size = New System.Drawing.Size(642, 109)
         Me.GroupBox3.TabIndex = 5
