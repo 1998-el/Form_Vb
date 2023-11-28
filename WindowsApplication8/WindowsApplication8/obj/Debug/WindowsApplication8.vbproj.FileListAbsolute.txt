@@ -18,3 +18,7 @@ C:\Users\Charly\Desktop\WindowsApplication8\WindowsApplication8\bin\Debug\Window
 C:\Users\Charly\Desktop\WindowsApplication8\WindowsApplication8\obj\Debug\WindowsApplication8.Form1.resources
 C:\Users\Charly\Desktop\WindowsApplication8\WindowsApplication8\obj\Debug\WindowsApplication8.Resources.resources
 C:\Users\Charly\Desktop\WindowsApplication8\WindowsApplication8\obj\Debug\WindowsApplication8.vbproj.GenerateResource.Cache
+C:\Users\Charly\Desktop\Form_Vb\WindowsApplication8\WindowsApplication8\bin\Debug\WindowsApplication8.exe.config
+C:\Users\Charly\Desktop\Form_Vb\WindowsApplication8\WindowsApplication8\obj\Debug\WindowsApplication8.exe
+C:\Users\Charly\Desktop\Form_Vb\WindowsApplication8\WindowsApplication8\obj\Debug\WindowsApplication8.xml
+C:\Users\Charly\Desktop\Form_Vb\WindowsApplication8\WindowsApplication8\obj\Debug\WindowsApplication8.pdb
